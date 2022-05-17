@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@layouts/*": ["layouts/*"],
+      "@images/*": ["public/images/*"],
       "@components/*": ["components/*"]
     },
     "target": "es5",
