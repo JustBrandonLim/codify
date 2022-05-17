@@ -15,13 +15,16 @@ const Home: NextPage = () => {
           <Link href="/play">
             <a
               className="px-3 py-2 text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow-lg hover:bg-blue-500"
-              aria-label="Try now"
+              aria-label="Play now"
             >
-              Try now
+              Play now
             </a>
           </Link>
           <Link href="/#contribute">
-            <a className="px-3 py-2 text-black transition-colors duration-300 rounded-lg shadow-lg hover:bg-neutral-100" aria-label="Contribute">
+            <a
+              className="px-3 py-2 text-black transition-colors duration-300 bg-white rounded-lg shadow-lg hover:bg-neutral-100"
+              aria-label="Contribute"
+            >
               Contribute
             </a>
           </Link>
@@ -31,7 +34,7 @@ const Home: NextPage = () => {
         <h2 className="mb-5 text-xl font-bold md:text-3xl">Let&apos;s hear from others</h2>
         <div className="grid items-stretch justify-center grid-cols-1 gap-5 md:grid-cols-2">
           <div className="p-5 rounded-lg shadow-lg bg-neutral-100">
-            <h4 className="mb-5 font-bold">Brandon</h4>
+            <h4 className="mb-5 font-bold">Chun Guan</h4>
             <p>
               <span className="inline-block mr-5">
                 <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -42,7 +45,7 @@ const Home: NextPage = () => {
             </p>
           </div>
           <div className="p-5 rounded-lg shadow-lg bg-neutral-100">
-            <h4 className="mb-5 font-bold">Shao Xuan</h4>
+            <h4 className="mb-5 font-bold">Alford</h4>
             <p>
               <span className="inline-block mr-5">
                 <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
