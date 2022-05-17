@@ -48,14 +48,14 @@ const Home: NextPage = () => {
           <span className="font-bold">Codify</span> works by getting a set of questions from a question bank for the specific programming language
           that you choose.
         </p>
-        <p className="mb-5">You are then presented with the questions in a deck of cards.</p>
+        <p className="mb-5">You are then presented with the questions in a series of cards.</p>
         <p className="mb-5">Answering questions correctly will yield you points.</p>
         <p>At the end of the quiz, you are shown the final tabulated score.</p>
       </section>
       <section id="contribute" className="container max-w-3xl p-5 mt-10">
         <h2 className="mb-5 text-xl font-bold md:text-3xl">How to contribute</h2>
         <p className="mb-5">
-          You can contribute by checking out our GitHub repository{" "}
+          You can contribute to our GitHub repository{" "}
           <a
             className="text-blue-600 underline underline-offset-2 hover:text-blue-500"
             href="https://github.com/JustBrandonLim/codify"

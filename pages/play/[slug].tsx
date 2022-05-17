@@ -24,7 +24,13 @@ const Play: NextPage = () => {
 
   const handleShare = () => {
     if (cards)
-      navigator.clipboard.writeText("I scored " + totalScore + " on Codify!\nCan you beat my score?\nTry it at http://localhost:3000/play now!");
+      navigator.clipboard.writeText(
+        "I scored " +
+          totalScore +
+          " on Codify for " +
+          programmingLanguage.name +
+          "!\nCan you beat my score?\nTry it at https://codify.justbrandonlim.com/play now!"
+      );
   };
 
   if (cards)

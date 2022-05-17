@@ -31,5 +31,16 @@ export default {
         },
       ],
     },
+    {
+      name: "Java",
+      slug: "java",
+      questions: [
+        {
+          question: "A list is an _____ collection of data.",
+          options: ["ordered", "unordered"],
+          answer: 0,
+        },
+      ],
+    },
   ],
 };
