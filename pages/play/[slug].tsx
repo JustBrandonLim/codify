@@ -24,9 +24,7 @@ const Play: NextPage = () => {
 
   const handleShare = () => {
     if (cards)
-      navigator.clipboard.writeText(
-        "I scored " + totalScore + " on Codify!\nCan you beat my score?\nTry it at https://codify.justbrandonlim.com/play now!"
-      );
+      navigator.clipboard.writeText("I scored " + totalScore + " on Codify!\nCan you beat my score?\nTry it at http://localhost:3000/play now!");
   };
 
   if (cards)
@@ -44,7 +42,9 @@ const Play: NextPage = () => {
             </p>
             <div className="p-5 rounded-lg shadow-lg bg-neutral-100">
               <h4 className="mb-5 font-bold">Results</h4>
-              <p className="mb-5">Total Score: {totalScore}</p>
+              <p className="mb-5">
+                You scored <span className="font-bold">{totalScore}</span>!
+              </p>
               <p className="mb-5">
                 Thank you for using <span className="font-bold">Codify</span>!
               </p>
@@ -78,7 +78,9 @@ const Play: NextPage = () => {
             <p className="mb-5">
               Welcome to <span className="font-bold">Codify</span> for <span className="font-bold capitalize">{programmingLanguage.name}</span>!
             </p>
-            <p className="mb-5">Your current score is {totalScore}.</p>
+            <p className="mb-5">
+              Your current score is <span className="font-bold">{totalScore}</span>.
+            </p>
             <div className="p-5 rounded-lg shadow-lg bg-neutral-100">
               <h4 className="mb-5 font-bold">Question {cardIndex + 1}</h4>
               <p className="mb-5">{cards[cardIndex].question}</p>

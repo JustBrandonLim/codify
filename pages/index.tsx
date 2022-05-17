@@ -1,6 +1,7 @@
-import SearchEngineOptimization from "@components/SearchEngineOptimization";
 import type { NextPage } from "next";
+import SearchEngineOptimization from "@components/SearchEngineOptimization";
 import Link from "next/link";
+import TestimonialCard from "@components/TestimonialCard";
 
 const Home: NextPage = () => {
   return (
@@ -33,28 +34,12 @@ const Home: NextPage = () => {
       <section className="container max-w-3xl p-5 mt-10">
         <h2 className="mb-5 text-xl font-bold md:text-3xl">Let&apos;s hear from others</h2>
         <div className="grid items-stretch justify-center grid-cols-1 gap-5 md:grid-cols-2">
-          <div className="p-5 rounded-lg shadow-lg bg-neutral-100">
-            <h4 className="mb-5 font-bold">Chun Guan</h4>
-            <p>
-              <span className="inline-block mr-5">
-                <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path d="M96 224C84.72 224 74.05 226.3 64 229.9V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32S145.7 96 128 96C57.42 96 0 153.4 0 224v96c0 53.02 42.98 96 96 96s96-42.98 96-96S149 224 96 224zM352 224c-11.28 0-21.95 2.305-32 5.879V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32s-14.33-32-32-32c-70.58 0-128 57.42-128 128v96c0 53.02 42.98 96 96 96s96-42.98 96-96S405 224 352 224z" />
-                </svg>
-              </span>
-              <span className="font-bold">Codify</span> has helped me build up confidence in my programming.
-            </p>
-          </div>
-          <div className="p-5 rounded-lg shadow-lg bg-neutral-100">
-            <h4 className="mb-5 font-bold">Alford</h4>
-            <p>
-              <span className="inline-block mr-5">
-                <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path d="M96 224C84.72 224 74.05 226.3 64 229.9V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32S145.7 96 128 96C57.42 96 0 153.4 0 224v96c0 53.02 42.98 96 96 96s96-42.98 96-96S149 224 96 224zM352 224c-11.28 0-21.95 2.305-32 5.879V224c0-35.3 28.7-64 64-64c17.67 0 32-14.33 32-32s-14.33-32-32-32c-70.58 0-128 57.42-128 128v96c0 53.02 42.98 96 96 96s96-42.98 96-96S405 224 352 224z" />
-                </svg>
-              </span>
-              <span className="font-bold">Codify</span> has helped me to study much more efficiently for my programming modules.
-            </p>
-          </div>
+          <TestimonialCard name="Alford" role="Apprentice" description="Codify has helped me build up confidence in my programming significantly." />
+          <TestimonialCard
+            name="Chun Guan"
+            role="Student"
+            description="Codify has helped me to study much more efficiently for my programming modules."
+          />
         </div>
       </section>
       <section className="container max-w-3xl p-5 mt-10">
@@ -87,22 +72,45 @@ const Home: NextPage = () => {
         </p>
       </section>
       <section className="container max-w-3xl p-5 mt-10">
-        <h2 className="mb-5 text-xl font-bold md:text-3xl">Contributors</h2>
+        <h2 className="mb-5 text-xl font-bold md:text-3xl">Credits</h2>
         <p className="mb-5">
-          Special thanks to{" "}
+          Made with{" "}
           <a
             className="text-blue-600 underline underline-offset-2 hover:text-blue-500"
-            href="https://github.com/pangkaho14"
-            aria-label="@pangkaho14"
+            href="https://nextjs.org/"
+            aria-label="@JustBrandonLim"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @pangkaho14
+            Next.js
           </a>{" "}
-          for your contributions.
+          and{" "}
+          <a
+            className="text-blue-600 underline underline-offset-2 hover:text-blue-500"
+            href="https://tailwindcss.com/"
+            aria-label="TailwindCSS"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TailwindCSS
+          </a>
+          .
         </p>
-        <p>
-          Built with love by{" "}
+        <p className="mb-5">
+          Powered by{" "}
+          <a
+            className="text-blue-600 underline underline-offset-2 hover:text-blue-500"
+            href="https://vercel.com/"
+            aria-label="Vercel"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Vercel
+          </a>
+          .
+        </p>
+        <p className="mb-5">
+          Built by{" "}
           <a
             className="text-blue-600 underline underline-offset-2 hover:text-blue-500"
             href="https://github.com/JustBrandonLim"

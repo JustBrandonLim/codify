@@ -6,7 +6,7 @@ const Footer: NextPage = () => {
       <p className="mb-5 text-center">
         &copy; {new Date().getFullYear()} <span className="font-bold">Codify</span>.
       </p>
-      <p className="mb-5 text-center">All rights reserved.</p>
+      <p className="text-center">All rights reserved.</p>
     </section>
   );
 };
