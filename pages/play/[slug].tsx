@@ -40,7 +40,7 @@ const Play: NextPage = () => {
               Welcome to <span className="font-bold">Codify</span> for <span className="font-bold capitalize">{programmingLanguage.name}</span>!
             </p>
             <p className="mb-5">
-              {totalScore >= cards.length / 2 ? "Congratulations! You have passed the quiz!" : "Oh no! You did not pass the quiz!"}
+              {totalScore >= (cards.length * 300) / 2 ? "Congratulations! You have passed the quiz!" : "Oh no! You did not pass the quiz!"}
             </p>
             <div className="p-5 rounded-lg shadow-lg bg-neutral-100">
               <h4 className="mb-5 font-bold">Results</h4>
