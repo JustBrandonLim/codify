@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section className="container max-w-3xl p-5 mt-10">
-        <h2 className="mb-5 text-xl font-bold md:text-3xl">Let's hear from others</h2>
+        <h2 className="mb-5 text-xl font-bold md:text-3xl">Let&apos;s hear from others</h2>
         <div className="flex flex-col gap-5 md:flex-row">
           <div className="p-5 rounded-lg shadow-lg bg-neutral-100">
             <h4 className="mb-5 font-bold">John Doe</h4>
