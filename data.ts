@@ -16,7 +16,7 @@ export default {
         },
         {
           question: 'How do you convert "JustBrandonLim" to lowercase?',
-          options: ['"JustBrandonLim".toLower()', '"JustBrandonLim".lower()'],
+          options: [".toLower()", ".lower()"],
           answer: 1,
         },
       ],

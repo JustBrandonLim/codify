@@ -45,6 +45,9 @@ const Play: NextPage = () => {
             <div className="p-5 rounded-lg shadow-lg bg-neutral-100">
               <h4 className="mb-5 font-bold">Results</h4>
               <p className="mb-5">Total Score: {totalScore}</p>
+              <p className="mb-5">
+                Thank you for using <span className="font-bold">Codify</span>!
+              </p>
               <div className="flex items-center justify-center gap-5">
                 <button
                   className="px-3 py-2 text-white transition-colors duration-300 bg-blue-600 rounded-lg shadow-lg hover:bg-blue-500"

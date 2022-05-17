@@ -86,6 +86,35 @@ const Home: NextPage = () => {
           <span className="font-bold">Codify</span> will always remain open-sourced.
         </p>
       </section>
+      <section className="container max-w-3xl p-5 mt-10">
+        <h2 className="mb-5 text-xl font-bold md:text-3xl">Contributors</h2>
+        <p className="mb-5">
+          Special thanks to{" "}
+          <a
+            className="text-blue-600 underline underline-offset-2 hover:text-blue-500"
+            href="https://github.com/pangkaho14"
+            aria-label="@pangkaho14"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @pangkaho14
+          </a>{" "}
+          for your contributions.
+        </p>
+        <p>
+          Built with love by{" "}
+          <a
+            className="text-blue-600 underline underline-offset-2 hover:text-blue-500"
+            href="https://github.com/JustBrandonLim"
+            aria-label="@JustBrandonLim"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @JustBrandonLim
+          </a>
+          .
+        </p>
+      </section>
     </>
   );
 };
